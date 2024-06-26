@@ -3,6 +3,7 @@ from textwrap import dedent
 
 class StockAnalysisTasks():
     def research(self, agent, company):
+        # Create a research task for the given company
         return Task(
             description=dedent(f"""\
                 Collect and summarize recent news articles, press releases, and market analyses related to the 
@@ -27,6 +28,7 @@ class StockAnalysisTasks():
         )
 
     def financial_analysis(self, agent):
+        # Create a financial analysis task
         return Task(
             description=dedent(f"""\
                 Conduct a thorough analysis of the stock's financial performance, including key financial metrics, and ratios. 
@@ -47,6 +49,7 @@ class StockAnalysisTasks():
         )
 
     def recommendation(self, agent):
+        # Create an investment recommendation task
         return Task(
             description=dedent(f"""\
                 Review the financial analysis and research findings to provide a detailed investment recommendation.
@@ -66,4 +69,5 @@ class StockAnalysisTasks():
         )
 
     def __tip_section(self):
+        # Private method to add a motivational tip to task descriptions
         return "If you do an amazing job, you'll receive $25,000 comission!"
