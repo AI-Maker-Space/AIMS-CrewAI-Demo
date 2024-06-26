@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "crewai-stock-analyzer-aims"
+version = "0.1.0"
+description = "A stock analyzer built with CrewAI for an AI Makerspace Demo"
+authors = ["Chris Alexiuk <chris@aimakerspace.io>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = ">=3.10.0,<3.12"
+crewai = "^0.32.2"
+llama-parse = "^0.4.4"
+llama-index-core = "^0.10.50.post1"
+llama-index-readers-file = "^0.1.25"
+python-dotenv = "^1.0.1"
+langchain = "0.1.20"
+google-search-results = "^2.4.2"
+langchain-community = "0.0.38"
+anthropic = "^0.29.0"
+langchain-anthropic = "0.1.10"
+yfinance = "^0.2.40"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
