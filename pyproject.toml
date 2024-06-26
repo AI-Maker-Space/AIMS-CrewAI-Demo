@@ -19,6 +19,10 @@ langchain-community = "0.0.38"
 anthropic = "^0.29.0"
 langchain-anthropic = "0.1.10"
 yfinance = "^0.2.40"
+sec-api = "^1.0.18"
+unstructured = "^0.14.8"
+langchain-openai = "0.1.7"
+faiss-cpu = "^1.8.0.post1"
 
 [build-system]
 requires = ["poetry-core"]

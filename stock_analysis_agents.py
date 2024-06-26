@@ -2,8 +2,9 @@ from crewai import Agent
 
 from tools.search_tools import SearchTools
 from tools.calculator_tools import CalculatorTools
+from tools.sec_tools import SECTools
 
-from langchain_community.tools import YahooFinanceNewsTool
+from langchain_community.tools.yahoo_finance_news import YahooFinanceNewsTool
 from langchain_anthropic import ChatAnthropic
 
 class StockAnalysisAgent:
@@ -21,6 +22,7 @@ class StockAnalysisAgent:
                 SearchTools.search_news,
                 CalculatorTools.calculate,
                 YahooFinanceNewsTool(),
+                SECTools.search_10q
             ]
         )
     
